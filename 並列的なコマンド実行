@@ -6,7 +6,7 @@ import subprocess
 start=time()
 procs=[]
 for i in range(10):
-    proc=subprocess.Popen(['sleep',str(1)])
+    proc=subprocess.Popen(['sleep',str(1)],shell=True)
     procs.append(proc)
 
 for proc in procs:
